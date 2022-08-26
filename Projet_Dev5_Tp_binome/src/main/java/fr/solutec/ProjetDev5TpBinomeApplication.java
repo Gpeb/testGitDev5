@@ -34,16 +34,17 @@ public class ProjetDev5TpBinomeApplication implements CommandLineRunner{
 		
 		User guillaume = new User(null, "Pebrier", "Guillaume", "login1", "password1");
 		User mohammed = new User(null, "Amara", "Mohammed", "login2", "password2");
+		User adrien = new User(null, "Pillou", "Adrien", "adrien.pillou@gmail.com", "0000");
 		
 		userRepo.save(guillaume);
 		userRepo.save(mohammed);
+		userRepo.save(adrien);
 
 		memoRepo.save(new Memo(null, "Contenu1", "2021-01-20", guillaume, mohammed, false));
 		memoRepo.save(new Memo(null, "Contenu2", "2021-11-18", guillaume, guillaume, false));
 		memoRepo.save(new Memo(null, "Contenu3", "2022-05-20", mohammed, mohammed, false));
-		
-		
-		
+		memoRepo.save(new Memo(null, "Salut, c'est Adrien.", "2022-05-20", adrien, null, true));
+
 	}
 
 }
