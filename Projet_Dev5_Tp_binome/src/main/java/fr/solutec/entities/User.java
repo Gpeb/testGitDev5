@@ -18,4 +18,6 @@ public class User {
 	private String prenom;
 	private String login;
 	private String password;	
+	
+	//fgdsoigjdf
 }
