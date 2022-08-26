@@ -24,3 +24,4 @@ public class UserRest {
 		return userRepo.findByLoginAndPassword(u.getLogin(),u.getPassword());					
 	}	
 }
+//fff
