@@ -44,6 +44,7 @@ public class ProjetDev5TpBinomeApplication implements CommandLineRunner{
 		memoRepo.save(new Memo(null, "Contenu2", "2021-11-18", guillaume, guillaume, false));
 		memoRepo.save(new Memo(null, "Contenu3", "2022-05-20", mohammed, mohammed, false));
 		memoRepo.save(new Memo(null, "Salut, c'est Adrien.", "2022-05-20", adrien, null, true));
+		memoRepo.save(new Memo(null, "Salut, c'est Adrien.", "2022-05-20", null, mohammed, true));
 
 	}
 
